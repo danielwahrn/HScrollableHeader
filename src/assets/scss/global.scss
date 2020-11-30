@@ -1,0 +1,110 @@
+@import 'color';
+
+a {
+    text-decoration: none;
+}
+
+label, p, span {
+    margin: 0;
+    font-size: 11px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.app-main {
+    height: calc(100vh - 90px);
+}
+
+.width-hit-content {
+    // width: fit-content;
+}
+
+.app-header {
+    height: 90px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #d3d5d9;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.1);
+    // overflow-x: auto;
+    overflow-y: hidden;
+
+    .menu-item {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        .menu-item-content {
+            background-color: #ced0d5;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        .menu-item-label {
+            background-color:  #96989b;
+            height: 15px;
+            font-size: 12px;
+            color: white;
+            text-align: center;
+        }
+
+        .menu-item-detail {
+            // height: 100%;
+            // width: 100%;
+            padding: 5px;
+            flex: 1;
+        }
+
+        .menu-item-detail:hover{
+            background-color: burlywood;
+        }
+    }
+}
+
+.app-sidebar {
+    width: 100%;
+    max-width: 40px;
+    height: calc(100vh - 90px);
+    top: 90px;
+    position: fixed;
+    background-color: $primary;
+    .side-item {
+        height: 150px;
+        width: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+            // align-self: center;;
+        color: white;
+        cursor: pointer;
+        a {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+                // align-self: center;;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .side-item:hover {
+        background-color: $side-item-hover;
+    }
+
+    .side-item.active {
+        background-color: black;
+    }
+}
+
+.app-content {
+    width: calc(100wh - 50px);
+    height: calc(100vh - 150px);
+}
